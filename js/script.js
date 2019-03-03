@@ -52,13 +52,12 @@ function setup() {
   $candy = $('#candy');
   // make it dragable
   $candy.draggable({
+        // closes the mouth when the candy is dragged and plays a disgusted sound
+    start: function (event, ui){
+      ewSFX.play();
+    },
     // moves the candy to its original position
     revert: true,
-    // closes the mouth when the candy is dragged and plays a disgusted sound
-    start: function (event, ui){
-      $mouth.attr('src','assets/images/mouth-closed.png');
-      ewSFX.play();
-    }
   });
 }
 
