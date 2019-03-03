@@ -57,12 +57,11 @@ function setup() {
     // closes the mouth when the candy is dragged and plays a disgusted sound
     start: function (event, ui){
       $mouth.attr('src','assets/images/mouth-closed.png');
+      disgustSFX.play();
     },
     stop: function (event, ui){
       // this opens the mouth again
-      $mouth.attr('src', 'assets/images/mouth-closed.png');
-      disgustSFX.play();
-      disgustSFX.pause();
+      $mouth.attr('src', 'assets/images/mouth-opened.png');
     }
   });
 }
