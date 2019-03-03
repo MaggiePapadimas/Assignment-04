@@ -57,7 +57,7 @@ function setup() {
       ewSFX.play();
     },
     // moves the candy to its original position
-    revert: true,
+    revert: true
   });
 }
 
