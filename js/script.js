@@ -18,7 +18,7 @@ Chewing: https://freesound.org/people/InspectorJ/sounds/412068/
 let buzzSFX = new Audio("assets/sounds/buzz.mp3");
 let crunchSFX = new Audio("assets/sounds/crunch.wav");
 //disgust sound
-let ewSFX = new Audio("assets/sounds/ew.wav");
+let ewSFX = new Audio("assets/sounds/crunch.wav");
 
 // Variable to hold our two key elements
 let $mouth;
