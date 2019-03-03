@@ -18,7 +18,7 @@ Chewing: https://freesound.org/people/InspectorJ/sounds/412068/
 let buzzSFX = new Audio("assets/sounds/buzz.mp3");
 let crunchSFX = new Audio("assets/sounds/crunch.wav");
 //disgust sound
-let disgustSFX = new Audio("assets/sounds/disgust.wav");
+let ewSFX = new Audio("assets/sounds/ew.wav");
 
 // Variable to hold our two key elements
 let $mouth;
@@ -57,7 +57,7 @@ function setup() {
     // closes the mouth when the candy is dragged and plays a disgusted sound
     start: function (event, ui){
       $mouth.attr('src','assets/images/mouth-closed.png');
-      disgustSFX.play();
+      ewSFX.play();
   });
 }
 
