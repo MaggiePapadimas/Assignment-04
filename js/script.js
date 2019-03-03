@@ -58,6 +58,7 @@ function setup() {
     start: function (event, ui){
       $mouth.attr('src','assets/images/mouth-closed.png');
       ewSFX.play();
+    }
   });
 }
 
